@@ -19,15 +19,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: "Cycoth Site",
+        short_name: "Cycoth",
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        display: "standalone",
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        crossOrigin: `use-credentials`,
       },
     },
+    "gatsby-plugin-offline",
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
